@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.my-nav {
+  background-color: rgb(183, 255, 255);
+  padding: 10px 50px;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.burger {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+}
+.toggle {
+  font-size: 24px;
+
+  display: none;
+}
+.links {
+  display: flex;
+  align-items: center;
+}
+.links ul {
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.links li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+.links li::after {
+  content: "";
+  background-color: rgb(65, 72, 134);
+  height: 2px;
+  width: 0;
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 20%;
+}
+.links a {
+  text-decoration: none;
+  color: brown;
+}
+.links li:hover::after {
+  width: 60%;
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.social ul {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social li {
+  list-style-type: none;
+  padding: 0 20px;
+}
+.social a {
+  color: rgb(5, 46, 5);
+}
+
+.links {
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+  .social {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .toggle {
+    display: block;
+  }
+
+  .links ul {
+    flex-direction: column;
+  }
+
+  .links {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    padding-top: 20px;
+    background-color: rgba(58, 140, 143, 0.342);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    overflow: hidden;
+  }
+
+  .show {
+    height: 250px;
+    opacity: 1;
+  }
+  .links li {
+    padding: 0 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .links li::after {
+    content: "";
+    background-color: rgb(65, 72, 134);
+    height: 2px;
+    width: 0;
+    position: absolute;
+    transition: all 0.3s;
+    bottom: -5px;
+    left: 15%;
+  }
+
+  .links li:hover::after {
+    width: 60%;
   }
 }
