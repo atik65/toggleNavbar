@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/toggleNavbar/static/css/main.fc2c4fc3.chunk.css",
+    "main.js": "/toggleNavbar/static/js/main.f06eca77.chunk.js",
+    "main.js.map": "/toggleNavbar/static/js/main.f06eca77.chunk.js.map",
+    "runtime-main.js": "/toggleNavbar/static/js/runtime-main.6062b90a.js",
+    "runtime-main.js.map": "/toggleNavbar/static/js/runtime-main.6062b90a.js.map",
+    "static/js/2.60ac51fa.chunk.js": "/toggleNavbar/static/js/2.60ac51fa.chunk.js",
+    "static/js/2.60ac51fa.chunk.js.map": "/toggleNavbar/static/js/2.60ac51fa.chunk.js.map",
+    "static/js/3.d521ffa0.chunk.js": "/toggleNavbar/static/js/3.d521ffa0.chunk.js",
+    "static/js/3.d521ffa0.chunk.js.map": "/toggleNavbar/static/js/3.d521ffa0.chunk.js.map",
+    "index.html": "/toggleNavbar/index.html",
+    "static/css/main.fc2c4fc3.chunk.css.map": "/toggleNavbar/static/css/main.fc2c4fc3.chunk.css.map",
+    "static/js/2.60ac51fa.chunk.js.LICENSE.txt": "/toggleNavbar/static/js/2.60ac51fa.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/toggleNavbar/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6062b90a.js",
+    "static/js/2.60ac51fa.chunk.js",
+    "static/css/main.fc2c4fc3.chunk.css",
+    "static/js/main.f06eca77.chunk.js"
+  ]
+}
